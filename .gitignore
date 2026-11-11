@@ -1,7 +1,15 @@
-node_modules
-# Keep environment variables out of version control
+# Dependencies
+node_modules/
+
+# Environment variables
 .env
-.agents*
-.claude*
-.windsurf*
-/generated/prisma
+.env.*
+!.env.example
+
+# AI coding assistant folders
+.agents/
+.claude/
+.windsurf/
+
+# Generated Prisma files
+/generated/prisma/
